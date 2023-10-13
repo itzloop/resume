@@ -168,8 +168,8 @@
     \begin{myitem}
         \textbf{#1} \\
         \textcolor{gray}{#2 \\#3\\}
-        \vspace{4pt}
-        \textbf{Skills: }#4
+        % \vspace{4pt}
+        % \textbf{Skills: }#4
         \vspace{6pt}        
     \end{myitem}
 }
@@ -179,9 +179,9 @@
         \textbf{#1} \\
         \textcolor{gray}{#2 \\#3\\}
         \vspace{4pt}
-        #5 \\
-        \vspace{4pt}
-        \textbf{Skills: }#4
+        #5
+        % \vspace{4pt}
+        % \textbf{Skills: }#4
         \vspace{6pt}   
     \end{myitem}
 }
@@ -219,18 +219,19 @@
         \begin{newexperiencewithdesc}
             {Software Engineer}
             {Jun 2021 - Sep 2023 · 2 yrs 4 mos}
-            {Tehran, Tehran Province, Iran · Hybrid}{Cloud Applications · Testing · Apache Kafka · Continuous Integration and Continuous Delivery (CI/CD) · Systems Design · Golang · Bash · DevOps · Go (Programming Language) · PostgreSQL · Redis · Kubernetes · Ansible · Git}
+            {Tehran, Tehran Province, Iran · Hybrid}
+            {Cloud Applications · Testing · Apache Kafka · Continuous Integration and Continuous Delivery (CI/CD) · Systems Design · Golang · Bash · DevOps · Go (Programming Language) · PostgreSQL · Redis · Kubernetes · Ansible · Git}
             {
                 \begin{itemize}
                     \item Developed and maintained Graham, a Realtime, Sub-Second Latency Video/Audio communication platform.
                     \item Developed and maintained GiftPacket, a way to share money between family and friends for special events (i.e. Eids).
-                    \item Developed Cheshm-Be-Rah,a service that gave people a one-way communication by USSD. It is used in Arbaeen walk every year.
+                    \item Developed Cheshm-Be-Rah, a service that gave people one-way communication by USSD. It is used in the Arbaeen walk every year.
                     \item Improved deployment mechanism and test automation.
                     \item Managed infrastructure of Safir, A B2B product to encourage 
                     businesses to use Bale's instant messaging instead of the old and 
                     expensive SMS.
-                    \item Developed a wrapper for IRDR, Central Bank of Iran's Crypto Currency.
-                    \item Developed and maintained advertisement, a service for monetization.
+                    \item Developed a wrapper for IRDR, the Central Bank of Iran's Crypto Currency.
+                    \item Developed and maintained advertisement, a monetization service.
                 \end{itemize}
             }
         \end{newexperiencewithdesc}
@@ -269,43 +270,38 @@
         \end{newexperience}
     \end{myitemize}
 \vspace{-5pt}
+
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	    \resumeSubItem{Languages}{~~~Golang · Bash · Python · Java · C/C++ · C\# · JavaScript}
+	    \resumeSubItem{Frameworks}{~Gin · ReactJS · VueJS}
+	    \resumeSubItem{Tools}{~~~~~~~~~~~Kubernetes · Docker · Apache Kafka · Redis · PostgreSQL · Ansible · Git · Nginx · Linux}
+	    \resumeSubItem{Ohters}{~~~~~~~~~Testing \& Test Automation · Continuous Integration and Continuous Delivery (CI/CD) · System Design · Distributed Systems · Scalability · Networking}
+    \resumeSubHeadingListEnd
+\vspace{-5pt}
 %-----------EDUCATION-----------------
 \section{~~Education}
 %   \resumeSubHeadingListStart
-%       \resumeSubheading
-%       {Iran University of Science and Technology}{Tehran, Iran}
-%       {Bachelor of Software Engineering}{2018 - Present}
-%       {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Networking, Databases}}}
-%     \resumeSubheading
-%       {Sampad High School}{Gonabad, Iran}
-%       {Diploma in Mathematics}{2013 - 2019}
-%     \resumeSubHeadingListEnd
-    TODO
-	    
-\vspace{-5pt}
-\section{Skills Summary}
-	% \resumeSubHeadingListStart
-	% \resumeSubItem{Languages}{~~~~~~Golang, Bash, Python, C}
-	% \resumeSubItem{Frameworks}{~~~~Gin-Gonic/Gin, Echo, KubeBuilder}
-	% \resumeSubItem{Tools}{~~~~~~~~~~~~~~Kubernetes, Docker, Helm, S3, Git, Teleport, PostgreSQL, Scylla, Prometheus, Loki, Grafana, ELK, Vector, Gitlab CI/CD, FluxCD, Nginx, EnvoyProxy, Jfrog Artifactory}
-	% \resumeSubItem{Familiar With}{~~~~~~~Firewalling, VMware vSphere, Openstack, BIG-IP F5, eBPF, XDP, Katran, CDN}
-    TODO
-% \resumeSubHeadingListEnd
-\vspace{-5pt}
-% %-----------PROJECTS-----------------
-% \section{Projects}
-% \resumeSubHeadingListStart
-% \resumeSubItem{\href{https://github.com/dotenx/dotenx}{DoTenX}}{No-code and Low-code all-in-one platform to build landing pages, websites, web applications, APIs, automations. An alternative for Wix, Webflow, Zapier, and more.}
-% \vspace{2pt}
-% \resumeSubItem{\href{https://github.com/hawwwdi/Twitter_clone}{Twitter clone}}{I created a simple Twitter clone written in Go that uses Redis as its database.}
-% \vspace{2pt}
-% \resumeSubItem{Insomnia \& jURL}{Insomnia is an http client used for making customized request. jURL is reimplementaion of cURL but written in Java. This project was part of Advanced Programming course in University. Tech: Java, Swing}
-% \vspace{2pt}
-% \resumeSubHeadingListEnd
-
-\vspace{-2pt}
-\section{Volunteer Experience}
-\begin{itemize}
-    \item {Teaching Assistant of Operating Systems Course}
-\end{itemize}
+    \vspace{16pt}
+    \companyHeadingWithImageSimple{Iran University of Science and Technology}{https://www.linkedin.com/company/balemessenger}{iust}
+    \vspace{2pt}
+    \begin{myitemize}
+        \begin{newexperience}                
+            {Bachelor of Software Engineering}
+            {Sep 2018 - Aug 2023}
+            {Tehran, Tehran Province, Iran}
+            {XV6 · Operating Systems · c · Linux}
+        \end{newexperience}
+    \end{myitemize}
+    \companyHeadingEnd
+    \companyHeadingWithImageSimple{National Organization for Development of Exceptional Talents (Sampad)}{https://www.linkedin.com/school/iransampad/}{sampad}
+    \vspace{2pt}
+    \begin{myitemize}
+        \begin{newexperience}                
+            {High School Diploma, Mathematics}
+            {Sep 2014 - Jun 2018}
+            {Langerud, Gilan Province, Iran}
+            {Mathematics}
+        \end{newexperience}
+    \end{myitemize}
 \end{document}
