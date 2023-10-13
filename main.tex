@@ -24,6 +24,7 @@
 \usetikzlibrary{calc}
 \usepackage{refcount}
 \usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
 \graphicspath{ {./assets} }
 
 \pagestyle{fancy}
@@ -72,6 +73,16 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\companyHeadingWithImageSimple}[3]{
+    \vspace{-24pt}
+    \begin{figure}[H]
+        \href{#2}{\includegraphics[width=32pt]{#3}}
+        \vspace{-37.5pt}
+    \end{figure}
+    ~~~~~~~~~~~\textbf{\href{#2}{#1}}
+    \vspace{6pt}
+}
+
 \newcommand{\companyHeadingWithImage}[4]{
     \vspace{-24pt}
     \begin{figure}[H]
@@ -81,6 +92,15 @@
     ~~~~~~~~~~~\textbf{\href{#2}{#1}} \\
     ~~~~~~~~~~~\href{#2}{#3}
     \vspace{6pt}
+}
+
+\definecolor{myGray}{HTML}{E8E8E8}
+
+\newcommand{\companyHeadingEnd}{
+    \vspace{-22pt}
+    \begin{center}
+        \color{myGray}\par\noindent\rule{.92\textwidth}{0.1pt}
+    \end{center}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
@@ -148,9 +168,9 @@
     \begin{myitem}
         \textbf{#1} \\
         \textcolor{gray}{#2 \\#3\\}
-        \vspace{6pt}
+        \vspace{4pt}
         \textbf{Skills: }#4
-        \vspace{12pt}        
+        \vspace{6pt}        
     \end{myitem}
 }
 
@@ -158,11 +178,11 @@
     \begin{myitem}
         \textbf{#1} \\
         \textcolor{gray}{#2 \\#3\\}
-        \vspace{6pt}
+        \vspace{4pt}
         #5 \\
-        \vspace{6pt}
+        \vspace{4pt}
         \textbf{Skills: }#4
-        \vspace{12pt}   
+        \vspace{6pt}   
     \end{myitem}
 }
 
@@ -187,7 +207,7 @@
     \end{justify}
 %-----------Experience-----------------
 \section{Experience}\
-    \companyHeadingWithImage{BaleMessenger}{https://www.linkedin.com/company/balemessenger}{Full-time · 2 yrs 8 mos}{bale}
+    \companyHeadingWithImage{BaleMessenger}{https://www.linkedin.com/company/balemessenger}{Full-time · 2yrs 8 mos}{bale}
     \begin{myitemize}
         \begin{newexperience}                
             {Technical Lead}
@@ -226,76 +246,62 @@
                 \end{itemize}
             }
     \end{myitemize}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-		{Bale Messenger}{\href{https://bale.ai/}{Website}}
-		{Software Engineer (Full-time, On-site, Tehran, Iran)}{Mar 2021 -  Present}
-		\resumeItemListStart
-        \resumeItem{Monitoring}
-          {\\- Rebuilt the structure of Prometheus and Alertmanager using kube-prometheus-stack in kubernetes cluster.  \\
-         - Added alerts for resource usage, storage, network and more. \\
-         - Develope a kubernetes operator for alert management.}
-        \resumeItem{Access Management}
-          {\\- Set up and maintain a teleport cluster on kubernetes.}
-          {\\- Managing developers access to kubernetes cluster \& servers using teleport access management.}
-        \resumeItem{Staging Environment}{\\- Setting up staging environment on non-production kubernetes cluster using k3s and sync it with production using fluxCD.}
-        \resumeItem{Production Environment}{\\- Setting up Ingress-Nginx, Configuring Cert-Manager to generate TLS certificates.\\- Added alerts based on kubernetes cluster status and network bandwidth usage.\\- Distribution of incoming traffic to avoid full bandwidth usage.\\- Set up various operators, such as PGO, Strimzi, Prometheus, ECK, SealedSecrets, etc.}
-        \resumeItem{Cluster Migration}{
-        \\- Migrated whole applications and gateways from old kubernetes cluster to new baremetal one.\\- Shifting traffic to new cluster by configuring dns and firewall and using a L4 TCP proxy.}
-        \resumeItem{Data-center Migration}{
-        \\- Working on migrating all of services and storage from one dc to another with almost zero downtime.\\- Traffic shifting without configuring dns in order to ensure the health of new data-center.\\- Setting up mTLS connection for services to work in sync between data-centers in moving phase.\\- Set up Kafka Connect to publish topics to other data centers.\\- Configuring firewall to create main gateways.}
-        \resumeItem{Continous Deployment}{\\- Changed deployment's policies to use FluxCD instead of Ansible AWX or Gitlab CD.\\- Wrote new deployment workflow documentation and set up fluxCD operator in kubernetes.\\- Create helm chart for many services and using sealedSecret for encrypting secrets.}
-        \resumeItem{Resource Optimization}{\\- Achieving resource optimization through changing workload placement on Kubernetes nodes.}
-        \resumeItem{Database}{\\- Set up and deploy a multiDC scylla cluster \& configuring backup for it.\\- Set up and deploy multiple Stolon Postgres clusters on Kubernetes, and develop a cron job for Postgres backups.\\- Migrate old PostgreSQL databases from VMs to Kubernetes without downtime using PostgreSQL replication.\\- Syncing databases across multiple data centers using TLS and IPsec}
-		\resumeItemListEnd
-\vspace{+2pt}
-    \resumeSubheading{DoTenX}{\href{https://dotenx.com/}{site}}
-    {Software Engineer (Full-time, Remote, Sydney, NSW, Australia)}{Jul 2021 - Jul 2022}
-    \resumeItemListStart
-        \resumeItem{MI builder service}
-          {\\- I designed and developed a service to create VMs on AWS using Packer and Ansible. During this project, I worked with AWS, Packer, Ansible, and RabbitMQ.}
-          \resumeItem{Access manager}
-          {\\- I designed and developed a service for user authorization using Casbin. This service supports access control models such as ACL and RBAC, and uses a JSON model for policy definition. During this project, I worked with concepts such as middlewares, ACL, Postgresql, and JSON.}
-          \resumeItem{Incident manager}
-          {\\- I designed and developed a service for incident management that supports on-call rotations, generates and sends alerts based on metrics to on-call personnel, and provides acknowledgment functionality.}
-          \resumeItem{DoTenX}
-          {\\- I contributed to designing and developing open-source tools for no-code and low-code platforms that support automated workflows, as well as no-code/low-code backends and frontends.}
-      \resumeItemListEnd
-\resumeSubHeadingListEnd
+    \companyHeadingEnd
+    \companyHeadingWithImageSimple{Iran University of Science and Technology}{https://www.linkedin.com/company/balemessenger}{iust}
+    \vspace{2pt}
+    \begin{myitemize}
+        \begin{newexperience}                
+            {Teaching Assistant}
+            {Sep 2021 - Jan 2022 · 5 mos}
+            {Tehran, Tehran Province, Iran · Remote}
+            {XV6 · Operating Systems · c · Linux}
+        \end{newexperience}
+    \end{myitemize}
+    \companyHeadingEnd
+    \companyHeadingWithImageSimple{Medrick FZE}{https://www.linkedin.com/company/medrick-fze/}{medrick}
+    \vspace{2pt}
+    \begin{myitemize}
+        \begin{newexperience}                
+            {Game Developer}
+            {Nov 2019 - Jul 2020 · 9 mos}
+            {Tehran, Tehran Province, Iran · Hybrid}
+            {Game Development · Unity · Git · C\#}
+        \end{newexperience}
+    \end{myitemize}
 \vspace{-5pt}
 %-----------EDUCATION-----------------
 \section{~~Education}
-  \resumeSubHeadingListStart
-      \resumeSubheading
-      {Iran University of Science and Technology}{Tehran, Iran}
-      {Bachelor of Software Engineering}{2018 - Present}
-      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Networking, Databases}}}
-    \resumeSubheading
-      {Sampad High School}{Gonabad, Iran}
-      {Diploma in Mathematics}{2013 - 2019}
-    \resumeSubHeadingListEnd
-    
+%   \resumeSubHeadingListStart
+%       \resumeSubheading
+%       {Iran University of Science and Technology}{Tehran, Iran}
+%       {Bachelor of Software Engineering}{2018 - Present}
+%       {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Networking, Databases}}}
+%     \resumeSubheading
+%       {Sampad High School}{Gonabad, Iran}
+%       {Diploma in Mathematics}{2013 - 2019}
+%     \resumeSubHeadingListEnd
+    TODO
 	    
 \vspace{-5pt}
 \section{Skills Summary}
-	\resumeSubHeadingListStart
-	\resumeSubItem{Languages}{~~~~~~Golang, Bash, Python, C}
-	\resumeSubItem{Frameworks}{~~~~Gin-Gonic/Gin, Echo, KubeBuilder}
-	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Kubernetes, Docker, Helm, S3, Git, Teleport, PostgreSQL, Scylla, Prometheus, Loki, Grafana, ELK, Vector, Gitlab CI/CD, FluxCD, Nginx, EnvoyProxy, Jfrog Artifactory}
-	\resumeSubItem{Familiar With}{~~~~~~~Firewalling, VMware vSphere, Openstack, BIG-IP F5, eBPF, XDP, Katran, CDN}
-
-\resumeSubHeadingListEnd
+	% \resumeSubHeadingListStart
+	% \resumeSubItem{Languages}{~~~~~~Golang, Bash, Python, C}
+	% \resumeSubItem{Frameworks}{~~~~Gin-Gonic/Gin, Echo, KubeBuilder}
+	% \resumeSubItem{Tools}{~~~~~~~~~~~~~~Kubernetes, Docker, Helm, S3, Git, Teleport, PostgreSQL, Scylla, Prometheus, Loki, Grafana, ELK, Vector, Gitlab CI/CD, FluxCD, Nginx, EnvoyProxy, Jfrog Artifactory}
+	% \resumeSubItem{Familiar With}{~~~~~~~Firewalling, VMware vSphere, Openstack, BIG-IP F5, eBPF, XDP, Katran, CDN}
+    TODO
+% \resumeSubHeadingListEnd
 \vspace{-5pt}
-%-----------PROJECTS-----------------
-\section{Projects}
-\resumeSubHeadingListStart
-\resumeSubItem{\href{https://github.com/dotenx/dotenx}{DoTenX}}{No-code and Low-code all-in-one platform to build landing pages, websites, web applications, APIs, automations. An alternative for Wix, Webflow, Zapier, and more.}
-\vspace{2pt}
-\resumeSubItem{\href{https://github.com/hawwwdi/Twitter_clone}{Twitter clone}}{I created a simple Twitter clone written in Go that uses Redis as its database.}
-\vspace{2pt}
-\resumeSubItem{Insomnia \& jURL}{Insomnia is an http client used for making customized request. jURL is reimplementaion of cURL but written in Java. This project was part of Advanced Programming course in University. Tech: Java, Swing}
-\vspace{2pt}
-\resumeSubHeadingListEnd
+% %-----------PROJECTS-----------------
+% \section{Projects}
+% \resumeSubHeadingListStart
+% \resumeSubItem{\href{https://github.com/dotenx/dotenx}{DoTenX}}{No-code and Low-code all-in-one platform to build landing pages, websites, web applications, APIs, automations. An alternative for Wix, Webflow, Zapier, and more.}
+% \vspace{2pt}
+% \resumeSubItem{\href{https://github.com/hawwwdi/Twitter_clone}{Twitter clone}}{I created a simple Twitter clone written in Go that uses Redis as its database.}
+% \vspace{2pt}
+% \resumeSubItem{Insomnia \& jURL}{Insomnia is an http client used for making customized request. jURL is reimplementaion of cURL but written in Java. This project was part of Advanced Programming course in University. Tech: Java, Swing}
+% \vspace{2pt}
+% \resumeSubHeadingListEnd
 
 \vspace{-2pt}
 \section{Volunteer Experience}
