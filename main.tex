@@ -1,0 +1,305 @@
+% !TeX root = main.tex
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage{float}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[document]{ragged2e}
+\usepackage{fontawesome5}
+\usepackage{tikz,tikzpagenodes}
+\usetikzlibrary{calc}
+\usepackage{refcount}
+\usepackage{graphicx}
+\graphicspath{ {./assets} }
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\companyHeadingWithImage}[4]{
+    \vspace{-24pt}
+    \begin{figure}[H]
+        \href{#2}{\includegraphics[width=32pt]{#4}}
+        \vspace{-37.5pt}
+    \end{figure}
+    ~~~~~~~~~~~\textbf{\href{#2}{#1}} \\
+    ~~~~~~~~~~~\href{#2}{#3}
+    \vspace{6pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Linked like bullet points
+\newcounter{mylist} % new counter for amount of lists
+\newcounter{mycnt}[mylist] % create new item counter
+\newcounter{mytmp}[mylist] % tmp counter needed for checking before/after current item
+
+\newcommand{\drawoptionsconn}{gray, shorten <= .5mm, shorten >= .5mm, thick}
+\newcommand{\drawoptionsshort}{gray, shorten <= .5mm, shorten >= -1mm, thick}
+
+\newcommand{\myitem}{% Modified `\item` to update counter and save nodes
+  \stepcounter{mycnt}%
+  \item[\linkedlist{%
+    i\alph{mylist}\arabic{mycnt}}]%
+  \label{item-\alph{mylist}\arabic{mycnt}}%
+  \ifnum\value{mycnt}>1%
+    \ifnum\getpagerefnumber{item-\alph{mylist}\arabic{mytmp}}<\getpagerefnumber{item-\alph{mylist}\arabic{mycnt}}%
+      \begin{tikzpicture}[remember picture,overlay]%
+        \expandafter\draw\expandafter[\drawoptionsshort] (i\alph{mylist}\arabic{mycnt}) --
+          ++(0,3mm) --
+          (i\alph{mylist}\arabic{mycnt} |- current page text area.north);% draw short line
+      \end{tikzpicture}%
+    \else%
+      \begin{tikzpicture}[remember picture,overlay]%
+        \expandafter\draw\expandafter[\drawoptionsconn] (i\alph{mylist}\arabic{mytmp}) -- (i\alph{mylist}\arabic{mycnt});% draw the connecting lines
+      \end{tikzpicture}%
+    \fi%
+  \fi%
+  \addtocounter{mytmp}{2}%
+  \IfRefUndefinedExpandable{item-\alph{mylist}\arabic{mytmp}}{}{% defined
+    \ifnum\getpagerefnumber{item-\alph{mylist}\arabic{mytmp}}>\getpagerefnumber{item-\alph{mylist}\arabic{mycnt}}%
+      \begin{tikzpicture}[remember picture,overlay]%
+      \expandafter\draw\expandafter[\drawoptionsshort] (i\alph{mylist}\arabic{mycnt}) --
+        ++(0,-3mm) --
+        (i\alph{mylist}\arabic{mycnt} |- current page text area.south);% draw short line
+      \end{tikzpicture}%
+    \fi%
+  }%
+  \addtocounter{mytmp}{-1}%
+}
+
+\newcommand{\linkedlist}[1]{
+  \raisebox{0pt}[0pt][0pt]{\begin{tikzpicture}[remember picture]%
+  \node (#1) [gray,circle,fill,inner sep=1.5pt]{};
+  \end{tikzpicture}}%
+}
+
+\newenvironment{myitemize}{%
+% Create new `myitemize` environment to keep track of the counters
+  \stepcounter{mylist}% increment list counter
+  \begin{itemize}
+}{\end{itemize}%
+  }
+
+\newcommand{\newexperience}[4]{
+    \begin{myitem}
+        \textbf{#1} \\
+        \textcolor{gray}{#2 \\#3\\}
+        \vspace{6pt}
+        \textbf{Skills: }#4
+        \vspace{12pt}        
+    \end{myitem}
+}
+
+\newcommand{\newexperiencewithdesc}[5]{
+    \begin{myitem}
+        \textbf{#1} \\
+        \textcolor{gray}{#2 \\#3\\}
+        \vspace{6pt}
+        #5 \\
+        \vspace{6pt}
+        \textbf{Skills: }#4
+        \vspace{12pt}   
+    \end{myitem}
+}
+
+
+
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Sina Shabani Kumeleh}}\\
+  \href{tel:989395536558}{\faIcon{phone-alt} ~~(+98) 939-553-6558} &  \href{mailto:me@itsloop.dev}{\faIcon{envelope} ~~me@itsloop.dev}\\
+  \href{https://github.com/itzloop}{\faIcon{github-square} ~~github.com/itzloop} & \href{https://linkedin.com/in/sina-shabaniku}{\faIcon{linkedin} ~~linkedin.com/itzloop} \\
+\end{tabular*}
+%-----------About Me------------------
+\section{~~About Me}
+    \begin{justify}
+        As an experienced software engineer with over four years of professional practice, I specialize in the design and creation of high-quality, highly scalable, and fault-tolerant systems, all while adeptly managing intricacy. My expertise extends to encompass distributed systems, cloud-associated technologies, and micro-services. My hallmark is adaptability, demonstrated by my ability to confidently approach entirely novel and nebulous challenges, swiftly breaking them down and efficiently arriving at solutions. I've also been blessed with amazing colleagues who taught me how to be a team player. A pinnacle achievement in my career is the development of a real-time peer-to-peer communication platform, now serving hundreds of thousands of users daily.
+    \end{justify}
+%-----------Experience-----------------
+\section{Experience}\
+    \companyHeadingWithImage{BaleMessenger}{https://www.linkedin.com/company/balemessenger}{Full-time · 2 yrs 8 mos}{bale}
+    \begin{myitemize}
+        \begin{newexperience}                
+            {Technical Lead}
+            {Sep 2023 - Present · 2 mos}
+            {Tehran, Tehran Province, Iran · On-site}
+            {Cloud Applications · Testing · DevOps}
+        \end{newexperience}
+
+        \begin{newexperiencewithdesc}
+            {Software Engineer}
+            {Jun 2021 - Sep 2023 · 2 yrs 4 mos}
+            {Tehran, Tehran Province, Iran · Hybrid}{Cloud Applications · Testing · Apache Kafka · Continuous Integration and Continuous Delivery (CI/CD) · Systems Design · Golang · Bash · DevOps · Go (Programming Language) · PostgreSQL · Redis · Kubernetes · Ansible · Git}
+            {
+                \begin{itemize}
+                    \item Developed and maintained Graham, a Realtime, Sub-Second Latency Video/Audio communication platform.
+                    \item Developed and maintained GiftPacket, a way to share money between family and friends for special events (i.e. Eids).
+                    \item Developed Cheshm-Be-Rah,a service that gave people a one-way communication by USSD. It is used in Arbaeen walk every year.
+                    \item Improved deployment mechanism and test automation.
+                    \item Managed infrastructure of Safir, A B2B product to encourage 
+                    businesses to use Bale's instant messaging instead of the old and 
+                    expensive SMS.
+                    \item Developed a wrapper for IRDR, Central Bank of Iran's Crypto Currency.
+                    \item Developed and maintained advertisement, a service for monetization.
+                \end{itemize}
+            }
+        \end{newexperiencewithdesc}
+
+        \newexperiencewithdesc
+            {Backend Developer}
+            {Mar 2021 - Jun 2021 · 4 mos}
+            {Tehran, Tehran Province, Iran · Hybrid}
+            { Cloud Applications · Testing · Continuous Integration and Continuous Delivery (CI/CD) · Test Automation · Golang · Docker · DevOps · Backend · Go (Programming Language) · PostgreSQL · Redis · Kubernetes}
+            {
+                \begin{itemize}
+                    \item Developed a wrapper for National Bank of Iran's electronic wallet to bring microtransactions (i.e. ECharge, Internet) to the app.
+                \end{itemize}
+            }
+    \end{myitemize}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+		{Bale Messenger}{\href{https://bale.ai/}{Website}}
+		{Software Engineer (Full-time, On-site, Tehran, Iran)}{Mar 2021 -  Present}
+		\resumeItemListStart
+        \resumeItem{Monitoring}
+          {\\- Rebuilt the structure of Prometheus and Alertmanager using kube-prometheus-stack in kubernetes cluster.  \\
+         - Added alerts for resource usage, storage, network and more. \\
+         - Develope a kubernetes operator for alert management.}
+        \resumeItem{Access Management}
+          {\\- Set up and maintain a teleport cluster on kubernetes.}
+          {\\- Managing developers access to kubernetes cluster \& servers using teleport access management.}
+        \resumeItem{Staging Environment}{\\- Setting up staging environment on non-production kubernetes cluster using k3s and sync it with production using fluxCD.}
+        \resumeItem{Production Environment}{\\- Setting up Ingress-Nginx, Configuring Cert-Manager to generate TLS certificates.\\- Added alerts based on kubernetes cluster status and network bandwidth usage.\\- Distribution of incoming traffic to avoid full bandwidth usage.\\- Set up various operators, such as PGO, Strimzi, Prometheus, ECK, SealedSecrets, etc.}
+        \resumeItem{Cluster Migration}{
+        \\- Migrated whole applications and gateways from old kubernetes cluster to new baremetal one.\\- Shifting traffic to new cluster by configuring dns and firewall and using a L4 TCP proxy.}
+        \resumeItem{Data-center Migration}{
+        \\- Working on migrating all of services and storage from one dc to another with almost zero downtime.\\- Traffic shifting without configuring dns in order to ensure the health of new data-center.\\- Setting up mTLS connection for services to work in sync between data-centers in moving phase.\\- Set up Kafka Connect to publish topics to other data centers.\\- Configuring firewall to create main gateways.}
+        \resumeItem{Continous Deployment}{\\- Changed deployment's policies to use FluxCD instead of Ansible AWX or Gitlab CD.\\- Wrote new deployment workflow documentation and set up fluxCD operator in kubernetes.\\- Create helm chart for many services and using sealedSecret for encrypting secrets.}
+        \resumeItem{Resource Optimization}{\\- Achieving resource optimization through changing workload placement on Kubernetes nodes.}
+        \resumeItem{Database}{\\- Set up and deploy a multiDC scylla cluster \& configuring backup for it.\\- Set up and deploy multiple Stolon Postgres clusters on Kubernetes, and develop a cron job for Postgres backups.\\- Migrate old PostgreSQL databases from VMs to Kubernetes without downtime using PostgreSQL replication.\\- Syncing databases across multiple data centers using TLS and IPsec}
+		\resumeItemListEnd
+\vspace{+2pt}
+    \resumeSubheading{DoTenX}{\href{https://dotenx.com/}{site}}
+    {Software Engineer (Full-time, Remote, Sydney, NSW, Australia)}{Jul 2021 - Jul 2022}
+    \resumeItemListStart
+        \resumeItem{MI builder service}
+          {\\- I designed and developed a service to create VMs on AWS using Packer and Ansible. During this project, I worked with AWS, Packer, Ansible, and RabbitMQ.}
+          \resumeItem{Access manager}
+          {\\- I designed and developed a service for user authorization using Casbin. This service supports access control models such as ACL and RBAC, and uses a JSON model for policy definition. During this project, I worked with concepts such as middlewares, ACL, Postgresql, and JSON.}
+          \resumeItem{Incident manager}
+          {\\- I designed and developed a service for incident management that supports on-call rotations, generates and sends alerts based on metrics to on-call personnel, and provides acknowledgment functionality.}
+          \resumeItem{DoTenX}
+          {\\- I contributed to designing and developing open-source tools for no-code and low-code platforms that support automated workflows, as well as no-code/low-code backends and frontends.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {Iran University of Science and Technology}{Tehran, Iran}
+      {Bachelor of Software Engineering}{2018 - Present}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Networking, Databases}}}
+    \resumeSubheading
+      {Sampad High School}{Gonabad, Iran}
+      {Diploma in Mathematics}{2013 - 2019}
+    \resumeSubHeadingListEnd
+    
+	    
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~Golang, Bash, Python, C}
+	\resumeSubItem{Frameworks}{~~~~Gin-Gonic/Gin, Echo, KubeBuilder}
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Kubernetes, Docker, Helm, S3, Git, Teleport, PostgreSQL, Scylla, Prometheus, Loki, Grafana, ELK, Vector, Gitlab CI/CD, FluxCD, Nginx, EnvoyProxy, Jfrog Artifactory}
+	\resumeSubItem{Familiar With}{~~~~~~~Firewalling, VMware vSphere, Openstack, BIG-IP F5, eBPF, XDP, Katran, CDN}
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{\href{https://github.com/dotenx/dotenx}{DoTenX}}{No-code and Low-code all-in-one platform to build landing pages, websites, web applications, APIs, automations. An alternative for Wix, Webflow, Zapier, and more.}
+\vspace{2pt}
+\resumeSubItem{\href{https://github.com/hawwwdi/Twitter_clone}{Twitter clone}}{I created a simple Twitter clone written in Go that uses Redis as its database.}
+\vspace{2pt}
+\resumeSubItem{Insomnia \& jURL}{Insomnia is an http client used for making customized request. jURL is reimplementaion of cURL but written in Java. This project was part of Advanced Programming course in University. Tech: Java, Swing}
+\vspace{2pt}
+\resumeSubHeadingListEnd
+
+\vspace{-2pt}
+\section{Volunteer Experience}
+\begin{itemize}
+    \item {Teaching Assistant of Operating Systems Course}
+\end{itemize}
+\end{document}
