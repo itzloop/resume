@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Arch Linux) (preloaded format=xelatex 2023.10.13)  14 OCT 2023 09:11
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Arch Linux) (preloaded format=xelatex 2023.10.13)  22 OCT 2023 02:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -633,44 +633,44 @@ LaTeX Warning: Unused global option(s):
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 195.
-LaTeX Font Info:    ... okay on input line 195.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 195.
-LaTeX Font Info:    ... okay on input line 195.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 195.
-LaTeX Font Info:    ... okay on input line 195.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 195.
-LaTeX Font Info:    ... okay on input line 195.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 195.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 199.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-95.
+99.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 195.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 195.
-LaTeX Font Info:    ... okay on input line 195.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 195.
-LaTeX Font Info:    ... okay on input line 195.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 195.
-LaTeX Font Info:    ... okay on input line 195.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 195.
-LaTeX Font Info:    ... okay on input line 195.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 195.
-LaTeX Font Info:    ... okay on input line 195.
-Package hyperref Info: Link coloring OFF on input line 195.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+Package hyperref Info: Link coloring OFF on input line 199.
  (./main.out)
 (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-Package ragged2e Info: ABD: executing \RaggedRight on input line 195.
+Package ragged2e Info: ABD: executing \RaggedRight on input line 199.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 198.
+(Font)              <7> on input line 202.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 198.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 19
-8.
+(Font)              <5> on input line 202.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 20
+2.
  (/usr/share/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
@@ -682,14 +682,14 @@ File: ./assets/iust.jpeg Graphic file (type bmp)
 <./assets/iust.jpeg>
 
 
-/home/loop/p/cv/main.tex:271: LaTeX Error: \begin{newexperiencewithdesc} on inp
-ut line 265 ended by \end{newexperience}.
+/home/loop/p/cv/main.tex:275: LaTeX Error: \begin{newexperiencewithdesc} on inp
+ut line 269 ended by \end{newexperience}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.271         \end{newexperience}
+l.275         \end{newexperience}
                                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -708,24 +708,25 @@ File: ./assets/iust.jpeg Graphic file (type bmp)
 File: ./assets/sampad.jpeg Graphic file (type bmp)
 <./assets/sampad.jpeg>
 
+Overfull \hbox (0.3965pt too wide) in paragraph at lines 321--345
+[][]   []  
+ []
+
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 3.60004pt, for example:
 (fancyhdr)                \setlength{\footskip}{3.60004pt}.
 
 [2] (./main.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: ECEB199C7D5A7D669CB1AFC160C8C7EF;415.
+(rerunfilecheck)             Checksum: B1E7B17EBEB247D80BE1AD6345DCA352;1036.
  ) 
 Here is how much of TeX's memory you used:
- 22232 strings out of 478682
- 411245 string characters out of 5849664
- 1873018 words of memory out of 5000000
- 41953 multiletter control sequences out of 15000+600000
- 513037 words of font info for 45 fonts, out of 8000000 for 9000
+ 22245 strings out of 478682
+ 411532 string characters out of 5849664
+ 1871018 words of memory out of 5000000
+ 41958 multiletter control sequences out of 15000+600000
+ 513069 words of font info for 49 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  100i,11n,104p,811b,740s stack positions out of 10000i,1000n,20000p,200000b,200000s
 

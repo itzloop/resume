@@ -43,13 +43,17 @@
 \urlstyle{rm}
 
 \raggedbottom
-\raggedright
+% \raggedright
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-10pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+  \titlerule\vspace{10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}]
+
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{\filcenter\underline{\MakeUppercase{\textls[400]{\chaptertitlename}}\ \thechapter}}{20pt}{\Huge}
+
 
 %-------------------------
 % Custom commands
@@ -305,4 +309,37 @@
             {Mathematics}
         \end{newexperience}
     \end{myitemize}
+    \noindent
+
+\begin{center}
+  \huge\bfseries \MakeUppercase{Sina Shabani Kumeleh}
+\end{center}
+\begin{center}
+  \Large\bfseries \MakeUppercase{Software Engineer}
+\end{center}
+
+\begin{minipage}[t]{0.3\textwidth}
+  \section{contacts}
+  {
+    \href{tel:989395536558}{\faIcon{mobile-alt} ~~(+98) 939-553-6558} \\ \vspace{6pt}  
+    \href{mailto:me@itsloop.dev}{\faIcon{envelope} ~~me@itsloop.dev} \\ \vspace{6pt} 
+    \href{https://github.com/itzloop}{\faIcon{github-square} ~~github.com/itzloop}\\ \vspace{6pt} 
+    \href{https://linkedin.com/in/sina-shabaniku}{\faIcon{linkedin} ~~linkedin.com/sina-shabaniku} \\ \vspace{6pt} 
+    \faIcon{map-marker-alt} ~~Teheran, IRAN
+    \vspace*{14pt}
+  }
+
+
+  \section{skills}
+  \section{education}
+  \section{volunteering}
+\end{minipage} % no space if you would like to put them side by side
+\hspace{20pt}
+\begin{minipage}[t]{0.65\textwidth}
+  \section{perofessional summary}
+    \begin{justify}
+      As an experienced software engineer with over four years of professional practice, I specialize in the design and creation of high-quality, highly scalable, and fault-tolerant systems, all while adeptly managing intricacy. My expertise extends to encompass distributed systems, cloud-associated technologies, and micro-services. My hallmark is adaptability, demonstrated by my ability to confidently approach entirely novel and nebulous challenges, swiftly breaking them down and efficiently arriving at solutions. I've also been blessed with amazing colleagues who taught me how to be a team player. A pinnacle achievement in my career is the development of a real-time peer-to-peer communication platform, now serving hundreds of thousands of users daily.
+    \end{justify}
+  \section{work experience}
+\end{minipage}
 \end{document}
