@@ -33,3 +33,5 @@ vendor/
 build/
 
 *_generated.yaml
+
+.vscode/

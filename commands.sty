@@ -1,0 +1,87 @@
+\ProvidesPackage{commands}
+
+\usepackage[sfdefault]{roboto}  %% Option 'sfdefault' only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage{float}
+\usepackage[empty]{fullpage}
+\usepackage[tracking=true]{microtype}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[document]{ragged2e}
+\usepackage{fontawesome5}
+\usepackage{tikz,tikzpagenodes}
+\usetikzlibrary{calc}
+\usepackage{refcount}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{changepage}
+\graphicspath{ {./assets} }
+\usepackage{lipsum}
+
+% title format for top sections
+\newcommand*{\preparetopsec}{
+    \titleformat
+        {\section}
+        {\vspace{10pt}\scshape\raggedright\Large}
+        {}
+        {0em}
+        {\textsomels}
+        [\color{black}]   
+}
+
+% title format for normal sections
+\newcommand*{\preparenormalsec}{
+    \titleformat
+        {\section}
+        {\titlerule\vspace{10pt}\scshape\raggedright\Large}
+        {}
+        {0em}
+        {\textsomels}
+        [\color{black}]   
+}
+
+
+% used in section line spacing
+\newcommand*{\textsomels}[1]{\textls[200]{#1}}
+
+\newcommand*{\skill}[2]{
+    \textbf{#1}
+    \vspace{6pt}
+    \justifying
+      \begin{adjustwidth}{2pt}{}
+        \footnotesize #2
+      \end{adjustwidth}
+}
+
+\newcommand*{\edu}[4]{
+    \textbf{\small #1}\\
+    \vspace*{4pt}
+    \href
+    {#2}
+    {\footnotesize #3}\\
+    \vspace*{6pt}
+    \footnotesize{#4}
+}
+
+\newcommand*{\volunteerwithdate}[4]{
+    \textbf{\small #1}\\
+    \vspace*{4pt}
+    \footnotesize #2\\
+    \vspace*{4pt}
+    \footnotesize #3\\
+    \vspace*{6pt}
+    \footnotesize{#4}\\
+}
+
+\newcommand*{\volunteer}[3]{
+    \textbf{\small #1}\\
+    \vspace*{4pt}
+    \footnotesize #2 \\
+    \vspace*{4pt}
+    \footnotesize #3
+}
