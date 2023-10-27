@@ -53,9 +53,9 @@
     \textbf{#1}
     \vspace{6pt}
     \justifying
-      \begin{adjustwidth}{2pt}{}
-        \footnotesize #2
-      \end{adjustwidth}
+    \begin{adjustwidth}{2pt}{}
+    \footnotesize #2
+    \end{adjustwidth}
 }
 
 \newcommand*{\edu}[4]{
@@ -84,4 +84,16 @@
     \footnotesize #2 \\
     \vspace*{4pt}
     \footnotesize #3
+}
+
+\newcommand*{\expheadingwithlink}[5]{
+    \textbf{#1}\\
+    \begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}}r}
+      \footnotesize{\underline{\href{#3}{#2}}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace*{-4pt}
+    
+    {\color{CompanyDescColor} \footnotesize{#5}}
+    
+    \vspace*{4pt}
 }

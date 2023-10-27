@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.10.13)  27 OCT 2023 22:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.10.13)  28 OCT 2023 01:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -527,42 +527,42 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 LaTeX Warning: Unused global option(s):
     [20pt].
 
-No file main.aux.
+(./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 \c@mv@tabular=\count305
 \c@mv@boldtabular=\count306
-LaTeX Info: Redefining \microtypecontext on input line 22.
-Package microtype Info: Applying patch `item' on input line 22.
-Package microtype Info: Applying patch `toc' on input line 22.
-Package microtype Info: Applying patch `eqnum' on input line 22.
-Package microtype Info: Applying patch `footnote' on input line 22.
-Package microtype Info: Applying patch `verbatim' on input line 22.
+LaTeX Info: Redefining \microtypecontext on input line 24.
+Package microtype Info: Applying patch `item' on input line 24.
+Package microtype Info: Applying patch `toc' on input line 24.
+Package microtype Info: Applying patch `eqnum' on input line 24.
+Package microtype Info: Applying patch `footnote' on input line 24.
+Package microtype Info: Applying patch `verbatim' on input line 24.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 22.
+LaTeX Info: Redefining \showhyphens on input line 24.
 Package microtype Info: Tracking enabled.
 Package microtype Info: Using default tracking set `smallcaps'.
 Package microtype Info: No adjustment of interword spacing.
@@ -571,12 +571,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `Roboto-LF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 24.
+ (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-Package ragged2e Info: ABD: executing \RaggedRight on input line 22.
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+Package ragged2e Info: ABD: executing \RaggedRight on input line 24.
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count307
 \scratchdimen=\dimen262
@@ -596,180 +597,119 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 137.
+(Font)              `T1/Roboto-LF/regular/n' on input line 26.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 20.74pt on input line 137.
+(Font)              scaled to size 20.74pt on input line 26.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 137.
+(Font)              `T1/Roboto-LF/bold/n' on input line 26.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 20.74pt on input line 137.
+(Font)              scaled to size 20.74pt on input line 26.
  (/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 137.
+(Font)              <7> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 137.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 137.
+(Font)              <5> on input line 26.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 26.
  (/usr/share/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 141.
+(Font)              `T1/Roboto-LF/regular/n' on input line 30.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 14.4pt on input line 141.
+(Font)              scaled to size 14.4pt on input line 30.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 141.
+(Font)              `T1/Roboto-LF/bold/n' on input line 30.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 14.4pt on input line 141.
+(Font)              scaled to size 14.4pt on input line 30.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/sc' aliased to
-(Font)              `T1/Roboto-LF/regular/sc' on input line 147.
+(Font)              `T1/Roboto-LF/regular/sc' on input line 36.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/sc' will be
-(Font)              scaled to size 10.0pt on input line 147.
+(Font)              scaled to size 10.0pt on input line 36.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/sc' aliased to
-(Font)              `T1/Roboto-LF/regular/sc' on input line 147.
+(Font)              `T1/Roboto-LF/regular/sc' on input line 36.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/sc' will be
-(Font)              scaled to size 14.4pt on input line 147.
+(Font)              scaled to size 14.4pt on input line 36.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 147.
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 149.
+(Font)              <14.4> on input line 36.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 38.
  (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd)
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 149.
+(Font)              `T1/Roboto-LF/regular/n' on input line 38.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 9.0pt on input line 149.
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 150.
+(Font)              scaled to size 9.0pt on input line 38.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 39.
  (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
-LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on input line 151.
+LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on input line 40.
  (/usr/share/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 151.
+(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 162.
+(Font)              `T1/Roboto-LF/bold/n' on input line 51.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 162.
+(Font)              scaled to size 10.0pt on input line 51.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/m/n' aliased to
-(Font)              `T1/Roboto-LF/regular/n' on input line 162.
+(Font)              `T1/Roboto-LF/regular/n' on input line 51.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 162.
+(Font)              scaled to size 8.0pt on input line 51.
 
-Underfull \hbox (badness 2050) in paragraph at lines 166--166
+Underfull \hbox (badness 2050) in paragraph at lines 55--55
 []\T1/Roboto-LF/regular/n/8 (+20) Golang, Bash, Python, Java, C/C++, C#,
  []
 
 
-Underfull \hbox (badness 4647) in paragraph at lines 166--166
+Underfull \hbox (badness 4647) in paragraph at lines 55--55
 \T1/Roboto-LF/regular/n/8 (+20) JavaScript, Ku-ber-netes, Docker, Apache
  []
 
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 176.
+(Font)              `T1/Roboto-LF/bold/n' on input line 64.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 9.0pt on input line 176.
+(Font)              scaled to size 9.0pt on input line 64.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/b/n' aliased to
-(Font)              `T1/Roboto-LF/bold/n' on input line 183.
+(Font)              `T1/Roboto-LF/bold/n' on input line 71.
 LaTeX Font Info:    Font shape `T1/Roboto-LF/bold/n' will be
-(Font)              scaled to size 8.0pt on input line 183.
-Runaway argument?
-{As an experienced software engineer with over four years of professi\ETC.
-/home/loop/p/cv/main.tex:230: Paragraph ended before \begin  was complete.
-<to be read again> 
-                   \par 
-l.230 
-      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-/home/loop/p/cv/main.tex:231: Extra }, or forgotten \endgroup.
-l.231   }
-         
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/loop/p/cv/main.tex:232: Extra }, or forgotten \endgroup.
-\endminipage ...pagefalse \color@endgroup \egroup 
-                                                  \expandafter \@iiiparbox \...
-l.232 \end{minipage}
-                    
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-/home/loop/p/cv/main.tex:236: LaTeX Error: \begin{minipage} on input line 212 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.236 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-(./main.aux)
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-/home/loop/p/cv/main.tex:236: You can't use `\end' in internal vertical mode.
-\enddocument ...cument/end}\deadcycles \z@ \@@end 
-                                                  
-l.236 \end{document}
-                    
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-/home/loop/p/cv/main.tex:236: LaTeX Error: \begin{minipage} on input line 212 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.236 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-/home/loop/p/cv/main.tex:236: Missing } inserted.
-<inserted text> 
-                }
-l.236 \end{document}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
+(Font)              scaled to size 8.0pt on input line 71.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 124.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 124.
+LaTeX Font Info:    Trying to load font information for TS1+Roboto-LF on input line 127.
+(/usr/share/texmf-dist/tex/latex/roboto/TS1Roboto-LF.fd
+File: TS1Roboto-LF.fd 2019/12/11 (autoinst) Font definitions for TS1/Roboto-LF.
 )
-! Emergency stop.
-<*> /home/loop/p/cv/main
-                        
-*** (job aborted, no legal \end found)
+LaTeX Font Info:    Font shape `TS1/Roboto-LF/m/n' aliased to
+(Font)              `TS1/Roboto-LF/regular/n' on input line 127.
+LaTeX Font Info:    Font shape `TS1/Roboto-LF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 127.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `Roboto-LF' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `TS1/Roboto-LF/m/n' aliased to
+(Font)              `TS1/Roboto-LF/regular/n' on input line 128.
+LaTeX Font Info:    Font shape `TS1/Roboto-LF/regular/n' will be
+(Font)              scaled to size 9.0pt on input line 128.
+ [1
 
- 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/roboto/rbto_b5rac7.enc}{/usr/share/texmf-dist/fonts/enc/dvips/roboto/rbto_shbyjm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{/usr/share/texmf-dist/fonts/enc/dvips/roboto/rbto_ocbbsb.enc}] (./main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: DD0A1E5889911024465AAB9D66B0BC1D;619.
+ ) 
 Here is how much of TeX's memory you used:
- 27324 strings out of 477985
- 524783 string characters out of 5840057
- 1854388 words of memory out of 5000000
- 46973 multiletter control sequences out of 15000+600000
- 613405 words of font info for 115 fonts, out of 8000000 for 9000
+ 27583 strings out of 477985
+ 530361 string characters out of 5840057
+ 1878388 words of memory out of 5000000
+ 47095 multiletter control sequences out of 15000+600000
+ 627216 words of font info for 190 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 117i,4n,118p,1013b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 117i,11n,118p,1013b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/share/texmf-dist/fonts/type1/google/roboto/Roboto-Bold.pfb></usr/share/texmf-dist/fonts/type1/google/roboto/Roboto-Regular.pfb>
+Output written on main.pdf (1 page, 115257 bytes).
+PDF statistics:
+ 87 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
+ 8 named destinations out of 1000 (max. 500000)
+ 77885 words of extra memory for PDF output out of 89155 (max. 10000000)
+
