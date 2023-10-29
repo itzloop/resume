@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.10.13)  28 OCT 2023 22:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.10.13)  29 OCT 2023 10:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -698,15 +698,15 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: DD0A1E5889911024465AAB9D66B0BC1D;619.
  ) 
 Here is how much of TeX's memory you used:
- 27592 strings out of 477985
- 530577 string characters out of 5840057
+ 27598 strings out of 477985
+ 530718 string characters out of 5840057
  1877388 words of memory out of 5000000
  47095 multiletter control sequences out of 15000+600000
- 628255 words of font info for 196 fonts, out of 8000000 for 9000
+ 628956 words of font info for 200 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  117i,11n,118p,1013b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/share/texmf-dist/fonts/type1/google/roboto/Roboto-Bold.pfb></usr/share/texmf-dist/fonts/type1/google/roboto/Roboto-Regular.pfb>
-Output written on main.pdf (1 page, 115593 bytes).
+Output written on main.pdf (1 page, 115457 bytes).
 PDF statistics:
  87 PDF objects out of 1000 (max. 8388607)
  72 compressed objects within 1 object stream
